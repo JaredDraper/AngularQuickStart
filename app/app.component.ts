@@ -1,9 +1,9 @@
 import {Component} from '@angular/core';
-import {CoursesComponent} from './courses.component'
+import {CalendarComponent} from './calendar.component'
 
 @Component({
     selector: 'my-app',
-    template: `<h1>Hello Angular, I am your father.</h1><courses></courses>`,
-    entryComponents: [CoursesComponent]
+    template: `<h1>Welcome to Step Tracker</h1><days></days>`,
+    entryComponents: [CalendarComponent]
 })
 export class AppComponent { }

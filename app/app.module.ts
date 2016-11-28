@@ -1,15 +1,16 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent }  from './app.component';
-import { CoursesComponent } from './courses.component';
+import { CalendarComponent } from './calendar.component';
 import { AutoGrowDirective } from './auto-grow.directive';
-import { CourseService } from './course.service';
+import { CalendarService } from './calendar.service';
 
 @NgModule({
-  imports:      [ BrowserModule],
-  declarations: [ AppComponent, CoursesComponent, AutoGrowDirective],
+  imports:      [ BrowserModule, HttpModule ],
+  declarations: [ AppComponent, CalendarComponent, AutoGrowDirective],
   bootstrap:    [ AppComponent ],
-  providers: [CourseService]
+  providers: [CalendarService]
 })
 export class AppModule { }
